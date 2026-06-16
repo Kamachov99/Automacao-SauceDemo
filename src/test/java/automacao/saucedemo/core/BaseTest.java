@@ -24,7 +24,10 @@ public class BaseTest {
 	public void abrirNavegador() {
 		
 		ChromeOptions options = new ChromeOptions();
-
+		
+		options.addArguments("--headless=new");
+		options.addArguments("--no-sandbox");
+		options.addArguments("--disable-dev-shm-usage");
 		options.addArguments("--incognito");
 
 		driver = new ChromeDriver(options);
@@ -65,5 +68,6 @@ public class BaseTest {
 		}
 		
 	}
+	
 	
 }
