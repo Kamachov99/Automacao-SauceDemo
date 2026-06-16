@@ -26,6 +26,7 @@ O objetivo principal deste projeto é implementar uma suíte de testes automatiz
 * **Gerenciador de Dependências:** Maven
 * **Padrão de Projeto:** Page Object Model (POM)
 * **IDE de Desenvolvimento:** Eclipse
+* **Versionamento:** Git + GitHub e GitHub Actions (CI/CD)
 
 ---
 
@@ -64,20 +65,26 @@ Para importar, compilar e rodar os testes a partir do Eclipse, certifique-se de 
 
 O projeto está estruturado de forma a separar a lógica dos testes dos elementos da tela, facilitando a manutenção:
 
-├── src/main/java
-│   └── pages          # Elementos da tela e ações (botões, campos, cliques)
-│       ├── LoginPage.java
-│       ├── InventoryPage.java
-│       ├── CartPage.java
-│       └── CheckoutPage.java
-├── src/test/java
-│   └── tests          # Scripts de teste, massa de dados e validações (Asserts)
-│       ├── LoginTest.java
-│       ├── CartTest.java
-│       └── CheckoutTest.java
-├── pom.xml            # Arquivo de configuração do Maven (dependências do Selenium/JUnit)
+```text
+├── src/
+│   └── test/
+│       └── java/
+│           └── automacao.saucedemo.core
+│               └── BaseTest.java
+│           └── automacao.saucedemo.test
+│               ├── LoginTest.java
+│               ├── CartTest.java
+│               └── CheckoutTest.java
+├── Evidencias/
+├── pom.xml            
 └── README.md
+```
 
+---
+
+## 📸 Evidências
+
+Todos os testes possuem o método tirarPrint com a finalidade de registrar cada passo executado. Os prints ficam salvos na pasta 'Evidências/'.
 
 ---
 
