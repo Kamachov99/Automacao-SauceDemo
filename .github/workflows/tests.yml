@@ -3,7 +3,6 @@ name: Continuous Integration
 on:
   push:
     branches: [ main ]
-
   pull_request:
     branches: [ main ]
 
@@ -27,10 +26,9 @@ jobs:
       - name: Rodar os testes
         run: mvn test -B
 
-		- name: Publicar relatório
-		        uses: actions/upload-artifact@v4
-		        if: always()
-		        with:
-		          name: evidencias
-		          path: Evidencias/
-		  
+      - name: Publicar relatório
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: evidencias
+          path: Evidencias/
