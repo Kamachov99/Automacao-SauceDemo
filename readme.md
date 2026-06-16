@@ -78,6 +78,7 @@ O projeto está estruturado de forma a separar a lógica dos testes dos elemento
 ├── pom.xml            # Arquivo de configuração do Maven (dependências do Selenium/JUnit)
 └── README.md
 
+
 ---
 
 ## 👩‍💻 Autor
