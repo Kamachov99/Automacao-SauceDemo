@@ -1,0 +1,40 @@
+# --- Eclipse ---
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~
+.ninja_deps
+.ninja_log
+.factorypath
+.recommenders/
+
+# Configurações locais do projeto no Eclipse
+.classpath
+.project
+.settings/
+
+# --- Maven ---
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.next
+pom.xml.versionsBackup
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# --- Logs e Relatórios de Testes ---
+*.log
+logs/
+test-output/
+target/surefire-reports/
+target/failsafe-reports/
+
+# --- Sistema Operacional ---
+.DS_Store
+Thumbs.db
